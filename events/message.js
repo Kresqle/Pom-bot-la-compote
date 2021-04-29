@@ -5,8 +5,6 @@ const ytdl = require("ytdl-core");
 module.exports = async (client, message) => {
   if (message.author.bot) return;
 
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
-
   if (message.content.toLowerCase().includes("pom potes")) {
     const voiceChannel = message.member.voice.channel;
     if (voiceChannel) {
